@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<script type="text/javascript" src="http://devsps/SiteAssets/DocUpload/DocUpload.js"></script>
+<link rel="stylesheet" href="http://devsps/SiteAssets/DocUpload/DOCUpload.css" type="text/css" />
+</head>
+<div>
+<label id="lblInfo" class="label" for="ProposalSiteUrl">Please enter your Site Collection URL or leave blank to upload file to this Site Collection document library:</label>
+</div>
+<div>
+<select id="ProposalSiteUrl" class="dropdown" title="Select a site">
+<option value="http://devsps">This Site</option>
+<option value="http://devsps/test">SubSite</option>
+<option value="http://devsps/sites/Demo/">DifferentSiteCollection</option>
+</select>
+</div>
+<div class="div">
+<input id="AttachmentUploadField" type="file" size="98"/>
+<input id="AttachAttachmentButton" class="button" onclick="CannonFodder.Utilities.SaveAttachment();" type="button" value="Upload"/>
+<input type="reset" class="button" onclick="window.location.reload();" value="Refresh Page" />
+</div>
+<div class="div">
+<label id="lblResult" class="result"></label>
+</div>
+</html>
